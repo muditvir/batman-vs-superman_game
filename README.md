@@ -2,6 +2,6 @@
 
 A simple game created in HTML, CSS, JavaScript.
 
-P.S. - This is my first WebD Porject ;)
+P.S. - This is my first WebD Project ;)
 
 Peaceout ✌
