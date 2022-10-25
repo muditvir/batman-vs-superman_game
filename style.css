@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: green;
+    overflow: hidden;
+}
+
+.game{
+    background-color: yellow;
+    background-image: url(gotham_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.gameover{
+    color: aliceblue;
+    /* visibility: hidden; */
+    top: 70px;
+    font-size: 54px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#score{
+    color: aliceblue;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    right: 11px;
+    top: 13px;
+    border: 2px solid white;
+    width: fit-content;
+}
+.bm{
+    background-image: url(batman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170px;
+    width: 150px;
+    /* max-width: 100%; */
+
+    position: absolute;
+    bottom: 00px;
+    left: 20px; 
+
+}
+
+.sm{
+    background-image: url(superman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.moving_sm{
+    animation: moving_sm 3s linear infinite;
+}
+
+
+.animatebm{
+    animation: bm 1s linear;
+}
+
+@keyframes bm{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 250px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+@keyframes moving_sm {
+    0%{
+        right: 0px; 
+    }
+    100%{
+        right: 100%;   
+    }
+}
